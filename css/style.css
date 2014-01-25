@@ -14,7 +14,10 @@ By Andrew Orr 1/23/2014 -
 
 /*GLOBAL ELEMENTS*/
 
-
+body {
+	background-color:#000;
+	color:#fff;
+}
 
 /*ID'S
 */
