@@ -1,0 +1,139 @@
+@charset "UTF-8";
+/* CSS Document 
+For orrtube.com Main
+By Andrew Orr 1/23/2014 - 
+*/
+
+
+
+
+
+
+
+
+
+/*GLOBAL ELEMENTS*/
+
+
+
+/*ID'S
+*/
+
+
+/*links at top*/
+#nav-container{
+	background:#282828;
+	position: fixed;
+	width: 100%;
+}
+
+#nav-container li {
+	margin-top: 20px;
+}
+#top-nav{
+	width:100%;/*was 350px originally*/
+	background:#282828;/*yellow*/
+	height:50px;
+	margin: auto;
+	}
+#top-nav ul {
+	margin: auto;
+	
+}
+#top-nav ul li
+{
+	display: block;
+	float: left;
+
+	font-family: 'Audiowide', cursive;
+	border-bottom-left-radius: 56px 48px;
+	border-bottom-right-radius: 20px 40px;
+	
+	padding-right: 20px;
+	padding-left: 20px;
+}
+#top-nav ul li a {
+	color: #fff;
+	display: block;
+	font-size: 35px;
+	text-decoration: none;
+	text-align: center;
+	height: 179px;/*was 35, changed in attempt to make the space at the top of the link go away. but that doesn't work, it makes the area 100 px tall but still has a lot of empty space on the top*/
+	padding-top: 0px;
+this fixes the blank space on top of the link, but does not make it fill the blank space when it moves down
+	/*width: 75px;commenting this out makes it move in faster on chrome. it also makes one of the links go on the bottom quite comically*/
+	padding:100 20 0 20px;
+	/*makes the links at the top fade slower in chrome*/
+	-webkit-transition: all 0.3s ease-in;
+	margin-bottom: 0;
+	margin-left: -64px;
+	margin-right: -6px;
+	margin-top: 100;
+}
+
+#top-nav ul li a:hover{
+	background: darkgreen;
+	background:url(../img/cat.gif);
+	margin-top: 0px;/*was 20px see if this will get rid of the space on top*/
+}
+/*for the links in the header to be big and space around them*/ 
+.clearfix li a{
+	margin-right: 0px;
+	margin-left: 0px;
+	width: 252px;
+}
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*CLASSES
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*FIXES AND OTHER WHATNOTS*/
+
+.clearfix:after { 
+  content: "."; 
+  display: block; 
+  height: 0; 
+  clear: both; 
+  visibility: hidden; 
+}
+.clearfix { 
+  display: inline-block; 
+  }
+* html .clearfix {  
+  height: 1%;  
+} /* Hides from IE-mac \*/
+.clearfix {  
+  display: block;  
+}
