@@ -15,8 +15,10 @@ By Andrew Orr 1/23/2014 -
 /*GLOBAL ELEMENTS*/
 
 body {
-	background-color:#000;
-	color:#fff;
+	background-color: #000;
+	color: #999;
+	margin-left: 64px;
+	font-family: 'Averia Sans Libre', cursive;
 }
 
 /*ID'S
@@ -26,10 +28,10 @@ body {
 /*links at top*/
 
 #header{
-	padding-bottom:1000px;/*attempt to make there be space between this and the rest of the content of the page
-	
+	padding-bottom:250px;/*attempt to make there be space between this and the rest of the content of the page
 	it still becomes a problem because the links all move around as the window is resized
 		*/
+		opacity: 0.99;
 }
 #nav-container{
 	background:#282828;
@@ -64,7 +66,7 @@ body {
 	padding-left: 20px;
 }
 #top-nav ul li a {
-	color: #fff;
+	color: #CCC;
 	display: block;
 	font-size: 38px;
 	text-decoration: none;
@@ -77,7 +79,7 @@ this fixes the blank space on top of the link, but does not make it fill the bla
 	/*makes the links at the top fade slower in chrome*/
 	-webkit-transition: all 0.3s ease-in;
 	margin-bottom: -8px;
-	margin-left: -19px;
+	/*margin-left: -19px;commenting this out makes the spacing between the links look nicer*/
 	margin-right: 20;
 	margin-top: 100;
 }
@@ -97,8 +99,12 @@ this fixes the blank space on top of the link, but does not make it fill the bla
 	
 
 
-
-
+/*for the content of the page (ie text, pics, vids)*/
+#content .article{
+	margin-left:20px;
+	background-color:#131313;
+	padding-left: 20px;
+}
 
 
 
