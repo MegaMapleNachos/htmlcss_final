@@ -71,15 +71,18 @@ By Andrew Orr 1/23/2014 -
 this fixes the blank space on top of the link, but does not make it fill the blank space when it moves down
 	/*width: 75px;commenting this out makes it move in faster on chrome. it also makes one of the links go on the bottom quite comically*/
 	padding:100 20 0 20px;
-	margin: 100 20 0 20px;
 	/*makes the links at the top fade slower in chrome*/
 	-webkit-transition: all 0.3s ease-in;
+	margin-bottom: -8px;
+	margin-left: -19px;
+	margin-right: 20;
+	margin-top: 100;
 }
 
 #top-nav ul li a:hover{
 	background: darkgreen;
-	background:url(../img/cat.gif);
-	margin-top: 0px;/*was 20px see if this will get rid of the space on top*/
+	background: url(../img/cat.gif);
+	margin-top: -22px;/*was 20px see if this will get rid of the space on top*/
 }
 /*for the links in the header to be big and space around them*/ 
 .clearfix li a{
