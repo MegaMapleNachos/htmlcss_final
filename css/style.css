@@ -14,24 +14,39 @@ By Andrew Orr 1/23/2014 -
 
 /*GLOBAL ELEMENTS*/
 
+html{
+	/*min-width:1024px;*/
+}
 body {
 	background-color: #000;
 	color: #999;
 	margin-left: 64px;
 	font-family: 'Averia Sans Libre', cursive;
+	
+	
 }
 
+a {
+	color: limegreen;
+	text-decoration:none;
+}
+a:hover{
+	/*color: white;*/
+	text-decoration:underline;
+}
 /*ID'S
 */
 
-
+#style{
+	whwowo
+}
 /*links at top*/
 
 #header{
 	padding-bottom:250px;/*attempt to make there be space between this and the rest of the content of the page
 	it still becomes a problem because the links all move around as the window is resized
 		*/
-		opacity: 0.99;
+		opacity: 0.8;
 }
 #nav-container{
 	background:#282828;
@@ -108,9 +123,13 @@ this fixes the blank space on top of the link, but does not make it fill the bla
 
 
 
+#footer{
+	background-color:#131313;
+}
 
-
-
+#pagetitle{
+	background-color:#131313;	
+}
 
 
 
@@ -153,4 +172,7 @@ this fixes the blank space on top of the link, but does not make it fill the bla
 } /* Hides from IE-mac \*/
 .clearfix {  
   display: block;  
+}
+.clearfix ul{
+	width:1000px;
 }
